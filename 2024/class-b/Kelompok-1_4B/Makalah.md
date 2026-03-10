@@ -58,6 +58,8 @@ Adapun tujuan penulisan makalah ini adalah:
 
 **B. Sejarah Konflik antara Sains dan Agama**
 
+Sejarah konflik pada masa yunani sampai dengan masa modern memiliki banyak hal yang menarik. Dalam buku *Homo Deus* karya Yuval Noah Harari, menjabarkan beberapa hal dari konflik-konflik tiap masa. Pada masa yunani dan romawi, Harari menjelaskan bahwa pada masa ini manusia percaya nasib ditentukan oleh dewa. Misalnya ketika menghadapi kelaparan, solusinya ialah memberikan tumbal kepada dewa, bukan dengan hal empiris seperti sains.
+
 Pada abad kegelapan, penyelesaian sebuah konflik atau masalah hanya didasarkan pada Tuhan maupun kitab suci. Hal ini menjadikan Tuhan sebagai sumber tertinggi bukan hanya dalam makna, melainkan juga dalam hal otoritas. Sekarang, hal ini telah berubah. Selama berabad-abad, humanisme telah berusaha meyakinkan bahwa manusia merupakan sumber tertinggi sehingga bebas mengandalkan pikiran dan perasaan sendiri. 
 
 Kemudian, pada masa kebangkitan, konflik berakar pada perdebatan validitas kebenaran antara pengamatan empiris sains dan agama. Di masa ini, banyak terjadi perdebatan, tetapi pada akhirnya manusia mulai sepakat bahwa walaupun sains lebih banyak berkontribusi pada perdebatan etis, tanpa bimbingan dari agama, tatanan sosial berskala besar tidak mungkin bertahan. 
