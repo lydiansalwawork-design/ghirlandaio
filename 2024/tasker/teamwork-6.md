@@ -12,6 +12,8 @@ Presentator mampu melakukan dan menjelaskan installasi base arch linux
 | swap      | swap  |
 | root      | ext4  |
 
+untuk boot manager gunakan GRUB2.
+
 
 ### pengumpulan
 - presentator mengumpulkan penugasan di dalam repo penguasan masing masing pada hari Rabu, jam 07.30 AM  
