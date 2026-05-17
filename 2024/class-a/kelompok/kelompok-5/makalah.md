@@ -2,7 +2,7 @@
 Tugas ini disusun untuk memenuhi tugas mata kuliah Perpustakaan dan Arsip Digital
 
 
-## *Dosen Pengampu :*
+## Dosen Pengampu :
 Al Muhdil Karim, S.IP, M.Hum.
 
 ## Disusun oleh Kelompok 5 :
