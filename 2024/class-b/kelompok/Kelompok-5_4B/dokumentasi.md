@@ -55,19 +55,19 @@ Jika error berarti BIOS/Legacy mode
 Karena instalasi Arch Linux membutuhkan paket yang diunduh dari repository online, maka koneksi internet harus dipastikan aktif terlebih dahulu. 
 
 Masuk ke mode WIFI 
-iwctl 
+`iwctl` 
 
 Setelah masuk, cari wifi yang tersedia
-device list
-station wlan0 get-networks
+`device list`
+`station wlan0 get-networks`
 
 Untuk connect ke WIFI 
-station wlan0 connect namawifi
+`station wlan0 connect namawifi`
 
 Setelah itu masukan password WIFI 
 
 Untuk mengecek berhasil atau tidak
-ping ping.archlinux.org 
+`ping ping.archlinux.org` 
 
 ![wifi](https://cdn.corenexis.com/files/c/4925447720.jpg) 
 
@@ -75,7 +75,7 @@ ping ping.archlinux.org
 Jika berhasil dan muncul respon dengan satuan ms, maka internet sudah terhubung. 
 
 Setelah itu keluar dari iwctl
-Exit 
+`Exit` 
 
 ### Sinkronisasi Waktu
 Setelah memastikan internet berjalan, selanjutnya adalah melakukan sinkronisasi waktu otomatis supaya sistem tidak terjadi error.
