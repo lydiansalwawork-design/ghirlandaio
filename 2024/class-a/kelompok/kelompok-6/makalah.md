@@ -165,11 +165,9 @@ Kitty merupakan emulator terminal berbasis OpenGL yang dapat diprogram dan mendu
    sudo pacman -S kitty
    ```
 
-3. Setelah instalasi selesai, jalankan Kitty menggunakan
-  
-   ```
-   kitty
-   ```
+tunggu hingga installasi selesai 
+
+2. Seletah semuanya selesai buka Terminal Kitty.
 
 # BAB III PENUTUP
 
