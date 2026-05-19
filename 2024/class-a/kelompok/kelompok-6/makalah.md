@@ -4,19 +4,19 @@
 
 <p align="center"><img width="690" height="599" alt="690px-logouinsyarifhidayatullahjakarta" src="https://github.com/user-attachments/assets/656b29bd-4701-4b2d-8d57-e0c13afece40" />
 
-**Dosen Pengampu:**
+<p align="center"><b>Dosen Pengampu:<b>
 
-Al Muhdil Karim, S.IP, M.Hum.
+<p align="center">Al Muhdil Karim, S.IP, M.Hum.
 
-**Disusun Oleh Kelompok 6:**
+<p align="center"><b>Disusun Oleh Kelompok 6:<b>
 
-1. Kyshya Kanaya (12402051010006)
+<p align="center"><b>1. Kyshya Kanaya (12402051010006)
 
-2. Nayla Rizky Arsi Ainun (12402051030038)
+<p align="center"><b>2. Nayla Rizky Arsi Ainun (12402051030038)
 
-3. Dhea Azzahra Putri (12402051050113)
+<p align="center"><b>3. Dhea Azzahra Putri (12402051050113)
 
-<p align="center"><small>Kelas A
+<p align="center"><small> Kelas A
 
 <p align="center"><b>PROGRAM STUDI ILMU PERPUSTAKAAN</b></p>
 
@@ -78,47 +78,80 @@ Plasma adalah produk unggulan KDE, yang menawarkan lingkungan desktop tersedia y
 
 1. Pertama-tama pastinya kita akan masuk ke Arch Linux terlebih dahulu, Jangan lupa untuk selalu memeriksa updetan terbaru
 
-``` sudo pacman -Syyu ```
+``` 
+sudo pacman -Syyu
+```
 
 2. Lalu kemudian akan melakukan installasi KDE Plasma
 
-``` sudo pacman -S xorg plasma ```
+``` 
+sudo pacman -S xorg plasma
+```
 
 setelah sudah semua, cukup all saja dan default 1, dan yang terakhir y
 
 3. Setela itu aktifkan SDDM, SDDM ini merupakan display manager dari KDE Plasma
 
-``` sudo systemctl enable sddm.service ``` kemudian kita start ``` sudo systemctl start sddm.service ```
+```
+sudo systemctl enable sddm.service
+```
+
+Kemudian kita start 
+
+``` 
+sudo systemctl start sddm.service
+```
 
 ## 2.3 Pipwire
 PipeWire merupakan kerangka kerja multimedia tingkat rendah yang digunakan untuk mengelola audio dan video pada sistem Linux. Layanan ini juga dapat dikonfigurasi sebagai server audio maupun server penangkap video. Selain itu, PipeWire mendukung penggunaan container seperti Flatpak dan menggunakan sistem keamanan berbasis izin seperti Polkit untuk mengatur akses perekaman layar maupun audio sehingga lebih aman dan fleksibel digunakan pada desktop Linux modern. 
 
 1. Instalasi PipeWire menggunakan
 
-   ``` sudo pacman -S pipewire ```. 
+   ```
+   sudo pacman -S pipewire
+   ``` 
 
-2. Jika ingin install PipeWire beserta komponen pendukungnya gunakan
+3. Jika ingin install PipeWire beserta komponen pendukungnya gunakan
    
    ``` sudo pacman -S pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack ```
 
-3. Setelah instalasi selesai, aktifkan layanan PipeWire, PulseAudio dan WirePlumber.
+4. Setelah instalasi selesai, aktifkan layanan PipeWire, PulseAudio dan WirePlumber.
 
-   ``` systemctl --user enable --now pipewire.service ```
+   ```
+   systemctl --user enable --now pipewire.service
+   ```
 
-   ``` systemctl --user enable --now pipewire-pulse.service ```
+   ```
+   systemctl --user enable --now pipewire-pulse.service
+   ```
 
-   ``` systemctl --user enable --now wireplumber.service ```
+   ```
+    systemctl --user enable --now wireplumber.service
+   ```
 
 5. Untuk memastikan PipeWire berjalan dengan baik gunakan
    
-   ``` pactl info ```. Jika instalasi berhasil maka akan muncul tulisan ``` Server Name: PulseAudio (on PipeWire) ``` , tulisan tersebut menunjukkan bahwa PipeWire telah aktif dan berfungsi sebagai sistem audio utama pada Arch Linux.
+   ```
+   pactl info
+   ```
+
+   Jika instalasi berhasil maka akan muncul tulisan
+
+   ``` Server Name: PulseAudio (on PipeWire)
+   ```
+
+   Tulisan tersebut menunjukkan bahwa PipeWire telah aktif dan berfungsi sebagai sistem audio utama pada Arch Linux.
 
 ## 2.4 Dolphin
 Dolphin adalah pengelola file bawaan Plasma. Tujuannya adalah untuk meningkatkan kemudahan penggunaan pada tingkat antarmuka pengguna. Dolphin hanya berfokus sebagai pengelola file. Selain itu, Dolphin juga mendukung fitur preview file untuk video, gambar, PDF, audio, dan berbagai format lainnya. Penjelasan Installasi KDE Plasma:
 
 1. Install Dolphin
 
-``` sudo pacman -S dolphin ``` tunggu hingga installasi selesai 
+``` 
+sudo pacman -S dolphin
+```
+
+tunggu hingga installasi selesai 
 
 2. Seletah semuanya selesai buka Doplphin File Manager
    
@@ -127,15 +160,20 @@ Kitty merupakan emulator terminal berbasis OpenGL yang dapat diprogram dan mendu
 
 1. Install Kitty menggunakan
 
-   ``` sudo pacman -S kitty ```
+   ```
+   sudo pacman -S kitty
+   ```
 
-2. Setelah instalasi selesai, jalankan Kitty menggunakan
+3. Setelah instalasi selesai, jalankan Kitty menggunakan
   
-   ``` kitty ```
+   ```
+   kitty
+   ```
 
 # BAB III PENUTUP
 
 ## 3.1 Kesimpulan
+
 
 # DAFTAR PUSTAKA
 
