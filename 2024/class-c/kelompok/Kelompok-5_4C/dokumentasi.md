@@ -309,9 +309,16 @@ UEFI
 
 ---
 
-Selajutnya masuk ke tahap formating yaitu format partisi, swapping dan format EFI
+Selanjutnya, masuk ke tahap __Formatting__ yang meliputi tiga proses utama, yaitu format partisi __Root__, mengaktifkan __Swap__, dan format partisi __EFI__.
 
-Catatan : Partisi harus sesuai dengan type yang sudah di write tadi. jika sampai salah, dapat menyebabkan data di partisi hilang karena datanya telah timpa (salah satu nya Kehilangan OS). Untuk memastikan kembali partisi untuk digunakan agar tidak salah, ketik lslbk. kemudian lihat dan ingat semua type partisinya.
+Catatan : 
+- Partisi harus sesuai dengan type yang sudah di write tadi. jika sampai salah, dapat menyebabkan data di partisi hilang karena datanya telah tertimpa (salah satu nya Kehilangan OS). Untuk memastikan kembali partisi untuk digunakan agar tidak salah, ketik:
+```bash
+lslbk
+```
+kemudian lihat dan ingat semua type partisinya.
+
+---
 
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 38 07 PM (2)" src="https://github.com/user-attachments/assets/d55b8c13-a684-42ed-9199-0b69556888f5" />
 Contohnya seperti ini untuk Partisi nvme0n1p5 dengan size 512M (EFI), partisi nvme0n1p6 dengan size 4G (SWAP) Dan partisi nvme0n1p7 dengan size 44.3G yaitu sisa ruang kosong dari Partisi 50G (root)
@@ -368,6 +375,7 @@ Mount EFI:
 
 ```bash
 mount --mkdir /dev/efi_system_partition /mnt/boot
+```
 
 catatan : untuk root_partition & efi_System_partition disesuaikan dengan nama partisi yang tadi (Contoh, tadi Partisi root yaitu nvme0n1p7 dan EFI nvme0n1p5, maka perintahnya menjadi mount /dev/nvme0n1p7 dan mount --mkdir /dev/nvme0n1p5)
 
