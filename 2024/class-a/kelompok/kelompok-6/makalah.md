@@ -88,7 +88,7 @@ setelah sudah semua, cukup all saja dan default 1, dan yang terakhir y
 
 3. Setela itu aktifkan SDDM, SDDM ini merupakan display manager dari KDE Plasma
 
-``` sudo systemsti enable sddm.service ``` kemudian kita start ``` sudo systemcti start sddm.service ```
+``` sudo systemctl enable sddm.service ``` kemudian kita start ``` sudo systemctl start sddm.service ```
 
 ## 2.3 Pipwire
 PipeWire merupakan kerangka kerja multimedia tingkat rendah yang digunakan untuk mengelola audio dan video pada sistem Linux. Layanan ini juga dapat dikonfigurasi sebagai server audio maupun server penangkap video. Selain itu, PipeWire mendukung penggunaan container seperti Flatpak dan menggunakan sistem keamanan berbasis izin seperti Polkit untuk mengatur akses perekaman layar maupun audio sehingga lebih aman dan fleksibel digunakan pada desktop Linux modern. 
