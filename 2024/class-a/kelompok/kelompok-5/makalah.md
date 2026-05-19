@@ -52,9 +52,6 @@ hasil perintah tersebut menunjukkan tiga kemungkinan:
 
 Informasi ini penting karena langkah instalasi bootloader pada tahap akhir akan berbeda tergantung mode yang digunakan.
 
-**Perbedaan UEFI atau BIOS**
-
-
 
 **2.3 Perintah Awal di Live Environment**
 
@@ -76,6 +73,7 @@ Layanan systemd-timesyncd merupakan
 
 
 **2.6 Partisi Diks**
+
 **Partisi Boot**
 
 Partisi yang digunakan untuk menyimpan file-file yang diperlukan saat proses booting (menghidupkan) sistem Linux.
@@ -102,9 +100,18 @@ contoh :
 **Struktur Partisi**
 **UEFI**
 
+| Mount Point | Fungsi |
+| ----------- | ----------- |
+| ```boot``` | EFI Partition |
+| ```swap``` | Virtual Memory |
+| ```/``` | Root System |
 
 **BIOS Legacy**
 
+| Mount Point | Fungsi |
+| ----------- | ----------- |
+| ```swap``` | Virtual Memory |
+| ```/``` | Root System |
 
 
 **Format Partisi**
@@ -138,6 +145,7 @@ Untuk sistem UEFI, pasang partisi ke ```/mnt/boot```:
 
 
 ### 3. Konfigurasi sistem
+
 **3.1 Instalasi Sistem Dasar**
 
 Tidak ada konfiguransi yang diturunkan dari lingkungan produksi ke sistem yang diinstal. Salah satu yang wajib di instal adalah base, yang tidak menyertakan semua alat dari instalasi produksi, sehingga seringkali diperlukan menginstal lebih banyak paket.Sebagai contoh, instalasi dasar dengan kernel Linux yaitu:
@@ -217,6 +225,12 @@ Langkah selanjutnya yaitu pilih boot loader yang sesuai dengan skema partisi dan
 menggunakan GRUB sebagai bootloader dan mendownload efibootmgr untuk manage uefi.
 
 ### 4. Reboot
+
+Setelah semua konfigurasi selesai dilakukan di dalam lingkungan chroot, langkah selanjutnya adalah keluar dari lingkungan tersebut sebelum melakukan restart.
+
+Cara  keluar dari croot, ketik ```exit```, setelah itu melepas semua partisi yang sebelumnya di-mount pada /mnt menggunakan perintah ```unmount -R /mnt```dan setelahnya ketik ```reboot`` serta lepas USB installer setelah restart.
+
+
 
 ## Penutup
 
