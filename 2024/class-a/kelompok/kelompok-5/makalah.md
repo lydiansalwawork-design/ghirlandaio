@@ -248,4 +248,7 @@ https://wiki.archlinux.org/title/Partitioning#/
 
 https://udaygade.wordpress.com/wp-content/uploads/2015/04/linux-bible-by-christopher-negus.pdf
 
+https://wiki.archlinux.org/title/Main_page
+
+https://wiki.archlinux.org/title/GRUB
 
