@@ -490,7 +490,7 @@ passwd
 ### Penjelasan
 Mengatur password administrator/root.
 
-Install Bootloader
+# Install Bootloader (GRUB)
 
 ```bash
 pacman -S grub efibootmgr
