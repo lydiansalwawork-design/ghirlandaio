@@ -71,4 +71,20 @@
 <img width="1600" height="1200" alt="WhatsApp Image 2026-05-24 at 11 59 40" src="https://github.com/user-attachments/assets/eff8bb14-1949-4d1e-b178-ebb4cd90b40d" />
 <img width="1600" height="1200" alt="WhatsApp Image 2026-05-24 at 11 59 41" src="https://github.com/user-attachments/assets/f5457f1e-c4c2-4c2c-9252-dc3695b1aa63" />
 
-- 
+- Ketik **lsblk -o name,fstype,size** untuk mengecek lagi partisi Linux (sdb5, sdb6, dan sdb7 merupakan partisi milik Linux)
+<img width="1200" height="1600" alt="WhatsApp Image 2026-05-24 at 12 08 49" src="https://github.com/user-attachments/assets/ec8a2c6f-34a6-4eef-a0dc-2cd004cd10b8" />
+
+### Format partisi root
+- Ketik **mkfs.ext4 /dev/sdb7**
+
+### Format partisi boot
+- Ketik **mkfs.fat -F 32 /dev/sdb5**
+
+### Format partisi swap
+- Ketik **mkswap /dev/sdb6**
+- Lalu ketik **swapon /dev/sdb6**
+
+- Ketik **lsblk -o name,fstype,size** untuk mengecek lagi partisi Linux (sdb5, sdb6, dan sdb7 merupakan partisi milik Linux)
+<img width="1200" height="1600" alt="WhatsApp Image 2026-05-24 at 12 21 33" src="https://github.com/user-attachments/assets/96e54cd7-10f3-4d86-bac9-399180d95d07" />
+
+### 
