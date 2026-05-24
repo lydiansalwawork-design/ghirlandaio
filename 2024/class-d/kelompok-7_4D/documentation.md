@@ -363,3 +363,42 @@ booster build --kernel-version <version> /boot/booster-linux-lts-new.img
 ```
 rm -fr booster-linux-lts.img
 ```
+
+## systemd-boot
+```
+bootctl --path=/boot install
+```
+
+```
+nvim /boot/loader/entries/booster.conf
+```
+
+```
+title    arch with booster
+linux    /vmlinuz-linux-lts
+initrd   /intel-ucode.img
+initrd   /booster-linux-lts-new.img
+options  root=/dev/proc/root rw
+```
+
+```
+nvim /boot/loader/loader.conf
+```
+add value
+```
+default  booster.conf
+```
+
+```
+bootctl --graceful update 
+```
+## booting
+```
+exit
+```
+```
+umount -R /mnt
+```
+```
+reboot
+```
