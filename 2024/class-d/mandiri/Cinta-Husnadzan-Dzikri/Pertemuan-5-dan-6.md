@@ -158,6 +158,10 @@ Step 38:
 
 selesai
 
+<img width="1280" height="720" alt="a838ff40-3293-4adb-b114-254df56352cb" src="https://github.com/user-attachments/assets/9634340f-a122-43df-b97f-d226e2f3d41f" />
+
+<img width="1280" height="720" alt="f3ec56a2-b667-4608-938c-24c831c2f6d4" src="https://github.com/user-attachments/assets/c442d97c-b1f8-4d39-95e0-a8ae1f45440d" />
+
 <img width="1600" height="1200" alt="76b8b0ff-484d-4f3d-b2cd-b9fa3d66f3e5" src="https://github.com/user-attachments/assets/929d0098-672e-4781-9f82-a71adcfa1f3a" />
 
 <img width="1200" height="1600" alt="1ce2ed84-1811-40d4-a70e-d7b99e62f2d0" src="https://github.com/user-attachments/assets/eeab0731-0e54-47e7-be9b-318ac189447a" />
