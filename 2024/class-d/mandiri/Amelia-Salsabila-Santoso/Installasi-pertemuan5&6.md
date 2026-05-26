@@ -108,6 +108,28 @@ umount -R /mnt
 reboot
 Setelah laptop mati cabut flashdisk 
 
+Tunggu sampai masuk ke dalam halaman base linux, lalu masukan ussername yang sudah di buat klik enter lalu masukan passwordnya setelah itu ketik sudo su lalu masukan kembali passwordnya
+Kemudian ketik systemctl enable NetworkManager lalu enter
+
+Ketik lagi systemctl start NetworkManager lalu enter
+
+Kemudian ketik lagi systemctl status NetworkManager
+
+Sambung ke wifi
+
+mengisntal KDE Plasma maka ketik perinta pacman -S plasma sddm pipwire pipwire-pulse pipewire- jack kitty firefox dolphin lalu enter
+
+Kemudian ketik 1 lalu enter
+
+Lalu klik lagi angka 1 kemudian enter sampai muncul proses untuk download maka ketik y
+Lalu tunggu sampai proses instalasi selesai setelahnya ketik systemctl enable sddm kemudian enter
+
+Setelah enter ketik lagi systemctl start sddm lalu klik enter
+
+Masukkan password 
+Kemudian sudah masuk ke KDE PLASMA
+
+
 <img width="1280" height="960" alt="1000052193" src="https://github.com/user-attachments/assets/df6cd37e-eb7e-491a-af2f-e1b3fa7271cb" />
 <img width="1280" height="960" alt="1000052192" src="https://github.com/user-attachments/assets/a8c64156-c513-447b-809b-1273b136c574" />
 <img width="1280" height="960" alt="1000052190" src="https://github.com/user-attachments/assets/7a8e689d-b4ae-4052-ac4c-dfe17277d760" />
