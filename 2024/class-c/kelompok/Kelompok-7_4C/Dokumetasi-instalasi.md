@@ -524,9 +524,71 @@ sudo iptables -A (Chain) -p (protokol) --dport (nomor_port) -j (target)
 > Protokol bisa berupa tcp, udp, icmp.
 > Target bisa berupa ACCEPT, DROP, REJECT.
 
+## MPD dan MPC
+<img width="1280" height="513" alt="mpd" src="https://github.com/user-attachments/assets/508bccaa-390d-4778-9d0c-67ad02f5c4b5" />
+
+```
+mpd
+```
+```
+mpc update 
+```
+Untuk mengupdate musik dan akan ada tulisan update
+
+```
+mpc add namafile.mp3
+```
+Menambahkan musik dengan mengetik add nama file dengan format mp3 dan file musik ini di pastikan sudah dalam keadaan terdownload dan masuk ke folder tersendiri musik
+
+```
+mpc play
+```
+
+Untuk memutar (Playing) musik
+
+```
+mpc pause
+mpc stop
+```
+Dan jika ingin mengpause musiknya ketik pause dan untuk mengstop musiknya ketik stop
 
 
+## Open SSH
+<img width="1280" height="819" alt="openssh" src="https://github.com/user-attachments/assets/6ede2694-f461-4012-8dc6-54280a89621e" />
 
+OpenSSH ini dapat di lakukkan jika yang ingin diremot harus satu koneksi atau satu wifi agar bisa di remot
+
+```
+sudo systemctl start sshd
+```
+
+Untuk memulai ssh
+
+```
+sudo systemctl status sshd
+```
+
+Untuk mengecek apakah ssh nya aktif atau tidak, dilihat dari tulisan bagian yang berwarna hijau jika active (running) itu berarti ssh nya aktif
+
+```
+ip address
+```
+
+Melihat alamat inet untuk yang ingin diremot
+
+```
+ssh user@nomor inet
+```
+
+Setelah memasukkan user dan nomor inet masukkan password dari usernya
+
+Dan jika sudah selesai meremot dan ingin melogout
+
+```
+exit
+```
+
+dan akan ke logout dan akan ada tulisan connecting to (nomor inet) closed tandanya udah ke logout
 
 
 
