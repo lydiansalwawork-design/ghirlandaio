@@ -403,7 +403,7 @@ exit
 ```
 bootctl --path=/mnt/boot install
 ```
-
+---
 ```
 nvim /boot/loader/entries/booster.conf
 ```
