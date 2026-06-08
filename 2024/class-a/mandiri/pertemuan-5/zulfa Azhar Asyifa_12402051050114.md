@@ -6,7 +6,7 @@
 ## JUDUL: Apa Hubungan Hukum Ke 2 dan ke 3dalan teori Perpustakaan?
 
 
-##PENDAHULUAN
+## PENDAHULUAN
 Sekarang ini, perpustakaan tidak hanya memiliki koleksi fisik seperti buku dan lain sebagainya, tetapi juga menyediakan layanan digital seperti menyediakan perangkat elektronik di ruangan perpustakaan dan juga e-book maupun e-journal. Hal ini bisa terjadi karena adanya perkembangan Zaman, jika dulu lebih banyak pengguna koleksi fisik maka sekarang lebih banyak pengguna koleksi digital karena di zaman sekarang keseharian setiap orang dekat dengan ponsel maupun laptop yang memudahkan seseorang mencari informasi dari mana saja termasuk menjadi jarang untuk berkunjung ke perpustakaan. Jika dulu 5 hukum perpustakaan hanya mengatur bagaimana menggunakan buku dengan baik dan mencari informasi di buku dengan baik, tetapi sekarang 5 hukum perpustakaan berevolusi dan menyesuaikan dengan perkembangan zaman yaitu bagaimana menggunakan dan mencari informasi di dunia digital dengan baik dan bijak.
 Dari kasus yang sudah pernah terjadi seperti kebocoran data, hal tersebut terjadi karena ada orang jahat dari luar organisasi yang menyerang system internal perpustakaan maupun arsip digital. Umumnya mereka mempunyai cara tersendiri untuk dapat masuk ke system internal baik menggunakan pesan palsu maupun virus perangkat. Dengan demikian perpustakaan dan arsip digital perlu meningkatkan keamanan sistem dan juga memberikan pelatihan serta mengajarkan semua orang agar lebih berhati-hati dan bijak dalam menggunakan teknologi digital.
 
