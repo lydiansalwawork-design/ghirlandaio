@@ -68,26 +68,26 @@ Tampilan setelah selesai install plasma
 1. Install Pipewire
 
 ```
-sudo pacman -S piperiwe
+sudo pacman -S pipewire pipewire-alsa pipewire-jack pipewire-pulse wireplumber 
 
 ```
 
 <img width="1597" height="1361" alt="image" src="https://github.com/user-attachments/assets/dacf98f4-608b-4001-951f-cdb49d7c185a" />
 
-2. Setelah installasi selesai, aktifkan layanan Pipewire, PluseAudio, dan WirePlumber
+2. Setelah installasi selesai, aktifkan dan jalankan layanan Pipewire, PluseAudio, dan WirePlumber
 
 ```
-systemctl --user anable --now pipewire.service
-
-```
-
-```
-systemctl --user anable --now pipewire-pulse.service
+systemctl --user enable --now pipewire.service
 
 ```
 
 ```
-systemctl --user anable --now wireplumber.service
+systemctl --user enable --now pipewire-pulse.service
+
+```
+
+```
+systemctl --user enable --now wireplumber.service
 
 ```
 

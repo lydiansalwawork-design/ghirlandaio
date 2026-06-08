@@ -105,6 +105,7 @@ sudo pacman -S kitty
 # PENUTUP
 
 ## 3.1 Kesimpulan
+Arch linux merupakan sistem operasi yang cukup fleksibel mengikuti kebutuhan pengguna. Dengan adanya tambahan komponen pokok seperti Network Manager untuk mendeteksi jaringan internet, KDE Plasma sebagai tampilan dekstrop pada sistem operasional linux, Pipewire untuk mengatur audio , Dolphin berperan sebagai file explorer, dan Kitty sebagai terminal modern.
 
 # DAFTAR PUSTAKA
 - https://wiki.archlinux.org/title/Arch_Linux_(Bahasa_Indonesia) 

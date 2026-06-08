@@ -202,7 +202,7 @@ Saat proses restart berlangsung, flashdisk installer Arch Linux harus dilepaskan
 
 ## 3.1 Kesimpulan
 
-Berdasarkan pembhasan di atas, dapat disimpulakn bahwa Arch Linux adalah sistem operasiLinnux yang fleksibel dan dapat di ubah menajadi desktop kontemporer dengan menambahkan komponen penting seperti Network Manager untuk mengatur jaringan internet, Plasma sebagai tampilan desktop, Pipewire untuk mengtur audio, Dolphin sebagai manager file dan Kitty sebagai terminal  modern. Agar sistem bekerja dengan baik proses insatalasi dapat dilakukan secara bertahap. Arch Linux dapat digunakan sebagai desktop yang ringan dan menarik setelah semua proses selesai dan sistem dihidupkan kembali. Proses instalasi juga meningkatkan pemahaman pengguna tentang cara kerja dan pembangunan sistem desktop Linux.
+Berdasarkan pembahasan di atas, dapat disimpulakn bahwa Arch Linux adalah sistem operasi Linux yang fleksibel dan dapat di ubah menajadi desktop kontemporer dengan menambahkan komponen penting seperti Network Manager untuk mengatur jaringan internet, Plasma sebagai tampilan desktop, Pipewire untuk mengtur audio, Dolphin sebagai manager file dan Kitty sebagai terminal  modern. Agar sistem bekerja dengan baik proses insatalasi dapat dilakukan secara bertahap. Arch Linux dapat digunakan sebagai desktop yang ringan dan menarik setelah semua proses selesai dan sistem dihidupkan kembali. Proses instalasi juga meningkatkan pemahaman pengguna tentang cara kerja dan pembangunan sistem desktop Linux.
 
 # DAFTAR PUSTAKA
 

@@ -1,7 +1,5 @@
 # Panduan Instalasi Arch Linux 
 
-Selamat datang di panduan instalasi Arch Linux Kelompok 5
-
 Panduan ini disusun untuk membantu melewati setiap langkah proses instalasi Arch Linux dengan mudah dan terstruktur menggunakan live system dari media resmi. 
 
 Panduan ini juga dibuat sebagai bentuk dokumentasi dari tugas mata kuliah Perpustakaan dan Arsip Digital.
@@ -286,7 +284,7 @@ Sebelum memilih opsi Write, pastikan setiap partisi sudah diatur tipe nya dengan
 - 4G -> Linux Swap (untuk partisi Swap)
 - Sisa Ruang ->  Linux Filesystem (untuk partisi Root)
 
-__Sebagai Contoh__
+__Sebagai Contoh:__
 - jika total ruang bebas adalah 50G dan sudah terpakai 5,7G untuk __EFI__ dan __Swap__, maka sisa ruang untuk __Root__ adalah sekitar 44,3G.
 
 ---
@@ -321,179 +319,225 @@ kemudian lihat dan ingat semua type partisinya.
 ---
 
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 38 07 PM (2)" src="https://github.com/user-attachments/assets/d55b8c13-a684-42ed-9199-0b69556888f5" />
-Contohnya seperti ini untuk Partisi nvme0n1p5 dengan size 512M (EFI), partisi nvme0n1p6 dengan size 4G (SWAP) Dan partisi nvme0n1p7 dengan size 44.3G yaitu sisa ruang kosong dari Partisi 50G (root)
+
+---
+
+Contohnya seperti dalam gambar ini
+
+- nvme0n1p5 dengan ukuran 512M -> Partisi __EFI__
+- nvme0n1p6 dengan ukuran 4G -> Partisi __Swap__
+- nvme0n1p7 dengan ukuran 44,3G (sisa ruang dari partisi 50G) -> Partisi __Root__
+
+---
 
 # Format Partisi (root)
 
+Selanjutnya, ketik perintah ini:
 ```bash
 mkfs.ext4 /dev/nvme0n1p7
 ```
 
 ### Penjelasan
-Membuat filesystem ext4 pada partisi root.
+Perintah tersebut digunakan untuk membuat filesystem ext4 pada partisi __Root__.
 
 ---
 
 # Membuat Swap
 
+Untuk membuat partisi __Swap__, ketik:
 ```bash
 mkswap /dev/nvme0n1p6
 ```
 
-Aktifkan swap:
-
+Selanjutnya aktifkan __Swap__ yang telah dibuat dengan cara mengetik:
 ```bash
 swapon /dev/swap_partition
 ```
 
 ### Penjelasan
-Swap digunakan sebagai memori cadangan ketika RAM penuh.
+__Swap__ berfungsi sebagai memori cadangan yang akan digunakan secara otomatis ketika kapasitas __RAM__ sudah penuh.
 
 ---
 
 # Format EFI Partition
 
+Untuk membuat partisi __EFI__ (Boot), ketik:
 ```bash
 mkfs.fat -F 32 /dev/efi_system_partition
 ```
 
 ### Penjelasan
-EFI partition harus menggunakan FAT32.
+Partisi EFI __WAJIB__ menggunakan format __FAT32__ agar bisa berfungsi dengan baik.
 
+---
 
-Mount Filesystem
+# Mount Filesystem
 
-Sebelum masuk ke tahap penginstalan, partisi terlebih dahulu harus dipasang (Mount)
+Sebelum lanjut ke tahap instalasi, seluruh partisi yang telah dibuat harus dipasang terlebih dahulu lewat proses __Mount__.
 
-Mount root:
-
+Untuk Mount partisi __Root__, ketik:
 ```bash
 mount /dev/root_partition /mnt
 ```
 
-Mount EFI:
-
+Untuk Mount partisi __EFI__, ketik:
 ```bash
 mount --mkdir /dev/efi_system_partition /mnt/boot
 ```
 
-catatan : untuk root_partition & efi_System_partition disesuaikan dengan nama partisi yang tadi (Contoh, tadi Partisi root yaitu nvme0n1p7 dan EFI nvme0n1p5, maka perintahnya menjadi mount /dev/nvme0n1p7 dan mount --mkdir /dev/nvme0n1p5)
+__catatan:__
+- Sesuaikan __root_partition__ dan __efi_system_partition__ dengan nama partisi yang telah dibuat sebelumnya.
 
-setelah mount kita masuk ke dalam tahap penginstalan dengan perintah :
-Instalasi Sistem Dasar
+__contoh:__
+- jika partisi Root adalah __nvme0n1p7__ dan partisi EFI adalah __nvme0n1p5__, maka perintahnya menjadi mount __/dev/nvme0n1p7__ dan __mount --mkdir /dev/nvme0n1p5__.
 
+Setelah proses __Mount__ selesai, kita dapat melanjutkan ke tahap instalasi dengan menjalankan perintah berikut untuk menginstal sistem dasar:
 ```bash
-pacstrap -K /mnt base linux linux-firmware base base-devel iwd
+pacstrap -K /mnt base linux linux-firmware base base-devel networkmanager
 ```
 
 ### Penjelasan
 
-- `base` → paket inti sistem
+- `base` → paket inti sistem Arch Linux
 - `linux` → kernel Linux
-- `linux-firmware` → firmware hardware
-- `iwd` → Mengakses jaringan setelah penginstalan
+- `linux-firmware` → Firmware untuk berbagai perangkat keras
+- `iwd` → digunakan untuk mengakses jaringan setelah proses instalasi selesai
    
 ---
 
-Tunggu penginstalan hingga selesai, Kecepatan bergantung pada internet. Disarankan menggunakan wifi. meski bisa dengan hotspot HP, Tetapi prosesnya memakan waktu yang lama daripada menggunakan WIFI.
+Tunggu hingga proses instalasi selesai. Kecepatan instalasi sangat bergantung pada koneksi internet yang digunakan. Disarankan untuk menggunakan __WiFi__ karena meskipun hotspot dari HP tetap bisa digunakan, prosesnya akan memakan waktu jauh lebih lama dibandingkan menggunakan __WiFi__.
 
-setelah proses install selesai, buat fstab nya untuk menentukan partisi mana yang otomatis dimount saat boot.
+---
 
 # Membuat fstab
 
+Setelah proses instalasi selesai, buat file `fstab` dengan mengetik:
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
+
 ### Penjelasan
-fstab menentukan partisi mana yang otomatis dimount saat boot.
+File ini berfungsi untuk menentukan partisi mana saja yang akan otomatis di-mount saat perangkat melakukan boot.
+
+---
 
 # Masuk ke Sistem Baru (Chroot)
 
+Selanjutnya ketiklah:
 ```bash
 arch-chroot /mnt
 ```
 
 ### Penjelasan
-Mengubah root shell ke sistem Arch yang baru dipasang.
+Perintah tersebut digunakan untuk memindahkan root shell ke sistem __Arch Linux__ yang baru saja diinstal.
+
+---
 
 # Mengatur Timezone
 
+Untuk mengatur timezone, ketik:
 ```bash
 ln -sf /usr/share/zoneinfo/Area/Location /etc/localtime
 ```
 
-Contoh Indonesia:
-
+__Contoh: Mengatur timezone yang sesuai dengan timezone Indonesia__
 ```bash
 ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 ```
 
-Sinkronkan hardware clock:
-
+Untuk mengsinkronkan __Hardware Clock__ ketik:
 ```bash
 hwclock --systohc
 ```
 
+---
+
  # Localization
 
-Download neovim terlebih dahulu
+Untuk melanjutkan ke tahap lokalisasi, unduh dan instal `Neovim` terlebih dahulu. 
 
-(Tolong jelasin kegunaan neovim)
+__Neovim__ merupakan fork dari __Vim__ yang bertujuan untuk meningkatkan basis kode, memungkinkan implementasi API yang lebih mudah, pengalaman pengguna yang lebih baik, dan implementasi plugin.[^1]
 
+---
+
+Selanjutnya ketik:
 ```bash
 pacman -S neovim
 ```
-lalu ketik
+lalu:
+```bash
+ nvim /etc/locale.gen
+```
+terus uncommenting #en_US.UTF-8
+(Pagarnya yang dihapus) 
 
 ```bash
  locale-gen
 ```
-Dan Lanjutkan
+Dan di lanjutkan dengan:
+```bash
+locale > /etc/locale.conf
+```
+
 ```bash
 nvim /etc/locale.conf
 ```
 
-Pencet i Untuk insert dan masukkan command ini
+---
 
-```bash
-LANG=en_US.UTF-8
-```
-Setelah sudah terisi pencet escape dan ketik :wq
+
+Setelah sudah terisi, tekan key __escape__ pada keyboard dan ketik `:wq`
+
+---
 
 # Hostname
 
+untuk membuat __Useradd__, ketik:
 ```bash
-nvim /etc/hostname
+useradd -m (nama user) 
 ```
 
-Insert lagi dan masukkan nama hostname yang kalian inginkan, Contoh:
-"Luthfi"
+---
+
+
+Selanjutnya, Insert lagi dan masukkan nama hostname yang diinginkan. 
+
+Contoh: __"Luthfi"__
+- useradd -m Luthfi
+
 
 ### Penjelasan
-Hostname adalah nama komputer di jaringan.
+__useradd__ adalah nama yang digunakan untuk mengidentifikasi perangkat di jaringan.
+---
 
-# Generate Initramfs
-
-```bash
-mkinitcpio -P
-```
-
-### Penjelasan
-Membuat image boot awal Linux.
 
 # Password Root
 
+Selanjutnya, ketik:
 ```bash
-passwd
+passwd (nama user) 
 ```
 
 ### Penjelasan
-Mengatur password administrator/root.
+Perintah tersebut digunakan untuk mengatur __password__ administrator/root.
+
+---
+# Masuk Mode Root
+
+```bash
+echo "(nama user) ALL=(ALL:ALL) ALL " > /etc/sudoers.d/00_namauser
+```
+
+---
+
 
 # Install Bootloader (GRUB)
 
+Langkah berikutnya adalah melakukan instalisasi `Bootloader` atau `GRUB`, GRUB (GRand Unified Bootloader) adalah sebuah boot loader. GRUB saat ini juga dikenal sebagai `GRUB 2`. Sementara GRUB asli, atau dikenal dengan `GRUB Legacy`, yang sesuai dengan versi 0.9x.[^2] 
+
+Ikuti langkah langkah ini untuk menginstall Bootloader (GRUB):
 ```bash
-pacman -S grub efibootmgr
+pacman -S grub efibootmgr os-prober
 ```
 
 ```bash
@@ -504,24 +548,46 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+
+---
+
+
 # Reboot
 
-Keluar dari chroot:
+Jika sudah mengikuti langkah-langkah diatas dengan benar. maka tahap terakhir yang dilakukan dari instalisasi adalah melakukan __Reboot__.
 
+Keluar dari chroot:
 ```bash
 exit
 ```
 
-Unmount:
-
+Selanjutnya, lakukan Unmount dengan mengetik:
 ```bash
 umount -R /mnt
 ```
 
-Reboot:
-
+Lalu Reboot dengan mengetik:
 ```bash
 reboot
 ```
 
-Lepas USB installer setelah restart.
+Perhatian:
+- Pastikan USB installer telah dilepas setelah melakukan proses restart.
+
+---
+
+__SELESAI.__
+
+---
+
+## Sumber Tambahan:
+
+[^1]: https://wiki.archlinux.org/title/Neovim
+
+[^2]: https://wiki.archlinux.org/title/GRUB
+
+
+
+
+
+
