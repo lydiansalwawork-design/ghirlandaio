@@ -24,3 +24,12 @@ Seiring perkembangan zaman, kebutuhan dan perilaku pengguna perpustakaan juga me
 Kompetensi pustakawan juga berpengaruh terhadap kinerja dan daya saing, baik secara individu maupun institusi. Pustakawan yang memiliki kompetensi tinggi cenderung mampu bekerja lebih produktif dan memberikan kontribusi yang lebih besar terhadap organisasi. Asmad, Rahim, dan Jaman (2019) menyatakan bahwa kompetensi memiliki pengaruh signifikan terhadap kinerja pustakawan. Selain itu, peningkatan kompetensi juga membantu pustakawan untuk tetap kompetitif di tengah persaingan dunia kerja yang semakin ketat. Dengan demikian, pengembangan kompetensi menjadi faktor penting dalam meningkatkan kualitas sumber daya manusia di bidang perpustakaan.
 
 ## Kesimpulan
+Berdasarkan pembahasan, dapat disimpulkan bahwa peningkatan kompetensi pustakawan merupakan suatu kebutuhan yang tidak dapat dihindari di era modern. Perkembangan teknologi informasi menuntut pustakawan untuk terus beradaptasi dengan sistem dan layanan digital yang semakin kompleks. Selain itu, kompetensi yang baik juga berperan penting dalam meningkatkan kualitas layanan perpustakaan sehingga mampu memberikan kepuasan kepada pengguna. Perubahan kebutuhan dan perilaku pengguna yang semakin dinamis turut mendorong pustakawan untuk terus mengembangkan kemampuan agar tetap relevan. Di sisi lain, kompetensi juga berpengaruh terhadap peningkatan kinerja dan daya saing pustakawan dalam menghadapi tantangan profesional. Oleh karena itu, peningkatan kompetensi harus dilakukan secara berkelanjutan agar pustakawan mampu menjalankan perannya secara optimal.
+
+## Daftar Pustaka
+Asmad, C. C., Rahim, A. R., & Jaman, A. (2019). Pengaruh kompetensi terhadap kinerja pustakawan. *Jurnal Kajian Informasi & Perpustakaan*. https://doi.org/10.24198/jkip.v7i2.21344
+
+Nurhayati, E. S., & Wijayanti, L. (2023). Tinjauan literatur kompetensi pustakawan di era society 5.0. *BACA*. 
+https://doi.org/10.55981/baca.2023.826
+
+S. R. Ranganathan. (1931). *The five laws of library science*. Madras: Madras Library Association.
