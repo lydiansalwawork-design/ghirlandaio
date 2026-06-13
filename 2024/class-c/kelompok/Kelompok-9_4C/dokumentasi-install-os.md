@@ -233,12 +233,12 @@ cd ..
 mv vmlinuz-* intel-* kernel
 ```
 >[!NOTE]
-> * (artinya klik tab)
+> '*' (artinya klik tab)
 ```
 rm -fr initramfs-*
 ```
 >[!NOTE]
-> * (artinya klik tab)
+> '*' (artinya klik tab)
 ```
 mv /etc/mkinitcpio.conf /etc/mkinitcpio.d/default.conf
 ```
