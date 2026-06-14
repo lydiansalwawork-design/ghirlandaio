@@ -11,7 +11,7 @@
 ```station wlan0 get-networks```
 ```station wlan0 connect nama_wifi```
 ### 2. Pengujian Koneksi Jaringan
-```ping archlinux.org```
+```ping 1.1.1.1```
 ### 3. Melakukan Rekaman dengan Asciinema
 ```asciinema rec coba1.cast```
 ### 4. Melihat Partisi Disk
@@ -80,7 +80,7 @@
 ### 26. Konfigurasi Kernel Command Line
 ```mkdir /etc/cmdline.d```
 ```touch /etc/cmdline.d/{01-boot.conf,02-misc.conf}```
-```echo "rd.luks.name=$(blkid -s UUID -o value /dev/nvme0n1p5)=angela root=/dev/system/root" > /etc/cmdline.d/01-boot.conf```
+```echo "rd.luks.name=$(blkid -s UUID -o value /dev/sda5)=miya root=/dev/system/root" > /etc/cmdline.d/01-boot.conf```
 ```cat  /etc/cmdline.d/01-boot.conf```
 ### 27. Konfigurasi mkinitcpio
 ```nvim /etc/mkinitcpio.conf```
