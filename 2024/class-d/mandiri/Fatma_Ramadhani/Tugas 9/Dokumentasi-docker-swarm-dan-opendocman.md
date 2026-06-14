@@ -206,5 +206,7 @@ Kalau sudah, kita langsungkan saja pergi ke firefox punya manager dengan contoh 
 http://khaifatma.local.test/install/setup-config
 ```
 ## FINISH
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/6494cda2-2e51-46ce-996e-c01c2b699ed3" />
+
 
 Disclaimer: dokumentasi ini dibuat oleh dua orang yaitu Khairunnisa Candra dan Fatma Ramadhani, dibuat dengan sangat bertanggung jawab dan lillahi taala.
