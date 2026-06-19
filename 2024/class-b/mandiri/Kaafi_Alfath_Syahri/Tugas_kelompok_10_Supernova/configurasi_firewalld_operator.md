@@ -37,7 +37,7 @@ firewall-cmd --permanent --zone=operator --add-port=6379/tcp
 Izinkan layanan web melalui port **80/TCP**:
 
 ```bash
-firewall-cmd --permanent --zone=operator --add-port=88/tcp
+firewall-cmd --permanent --zone=operator --add-port=80/tcp
 ```
 
 ## Membuka Port HTTPS
